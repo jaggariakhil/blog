@@ -1,0 +1,50 @@
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	text-align: left;
+	font-size: 17px;
+}
+
+h1 {
+	color: rgb(15, 2, 37);
+	text-decoration: none;
+}
+
+h3 {
+	color: rgb(15, 2, 37);
+	text-decoration: none;
+	text-align: center;
+	padding: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: blueviolet;
+}
+
+.button {
+	background-color: transparent;
+	border-radius: 3px;
+	color: gainsboro;
+	text-align: center;
+	transition: all 0.3s;
+	position: center;
+	left: 100px;
+	top: 150px;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #362e1d;
+	position: center;
+	text-align: center;
+}
+
+.button:active {
+	background-color: rgb(102, 51, 153);
+	color: #fffaf0;
+	position: center;
+	text-align: center;
+}

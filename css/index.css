@@ -1,0 +1,92 @@
+@import "nav.css";
+@import "backgroundimages.css";
+@import "layout.css";
+@import "footer.css";
+
+.container {
+	display: grid;
+	grid-template-rows: auto auto ;
+	grid-template-columns: auto;
+	padding: 5px;
+	grid-template-areas: "nav-bar" "post1"  "post2"  "post3 " "ft";
+}
+@media (min-width:300px){
+	.container {
+		display: grid;
+		grid-template-rows: auto auto ;
+		grid-template-columns: auto;
+		padding: 5px;
+		grid-template-areas: "nav-bar nav-bar" "post1 post1"  "post2 post2"  "post3 post3" "info info" "ft ft";
+	}
+}
+
+@media (min-width:1100px) {
+	.container {
+		display: grid;
+		grid-template-rows: 40px 400px 380px 70px 30px;
+		grid-template-columns: 1fr 1fr;
+		padding: 2px;
+		grid-gap: 6px;
+		grid-template-areas: "nav-bar nav-bar" "post1 post1" "post2 post3" "post2 info" "ft ft";
+	}
+}
+
+#nav-bar {
+	grid-area: nav-bar;
+}
+
+#post1 {
+	grid-area: post1;
+}
+
+#post2 {
+	grid-area: post2;
+}
+
+#post3 {
+	grid-area: post3;
+}
+
+#info {
+	grid-area: info;
+}
+
+#footer {
+	grid-area: ft;
+}
+
+.bg {
+	background-color: rgb(112, 108, 108);
+	min-width: 60%;
+	max-width: 80%;
+	background-position: center;
+	margin: 50px;
+	padding: 5px 4px;
+	text-align: center;
+	border-radius: 2px;
+	text-decoration: none;
+	height: 220px;
+}
+
+.author-style {
+	color: rgb(139, 21, 21);
+	text-decoration: none;
+	background-color: rgb(128, 139, 170);
+	font-size: 25px;
+	text-emphasis-style: rgb(173, 167, 155);
+	min-width: 55%;
+	max-width: 500px;
+	padding: 5px 20px;
+	margin: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.subscription {
+	background-color: skyblue;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-evenly;
+	border: 50px;
+}
